@@ -1,65 +1,75 @@
-# My Portfolio Website - Overview 🚀
+# Rishi Vijay Siloni - Portfolio Website 🚀
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
-
----
-
-## ⚠️ Usage Notice
-
-This project is shared for learning purposes only.
-
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
-
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
+Full-stack personal portfolio website of **Rishi Vijay Siloni** — AI/ML Developer, Full-Stack Developer, and Computer Engineering Student.
 
 ---
 
-## 🛠️ Instructions
+## 📁 Project Structure
 
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
-
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
-
----
-
-## ⚙️ Tech Stack
-
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
-
----
-
-## 🎨 Assets Usage
-
-Some 3D assets included in this repository are free to use for learning purposes.
-
-However:
-
-- The original 3D avatar used on my live portfolio is NOT included in this repository
-- That avatar is a custom asset created over ~1 month
-- It is not open source and not available for reuse
-
-Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
+```
+Portfolio-Website/
+├── frontend/               # React + TypeScript + Three.js frontend application
+│   ├── public/             # 3D models, textures, and static assets
+│   ├── src/                # React components, styles, and animation logic
+│   ├── package.json        # Frontend scripts and dependencies
+│   ├── vite.config.ts      # Vite configuration
+│   └── tsconfig.json       # TypeScript configuration
+├── backend/                # Node.js + Express REST API server
+│   ├── src/
+│   │   ├── controllers/    # API request handlers (e.g. contact form)
+│   │   ├── routes/         # Express API routes
+│   │   └── server.js       # Main server entry point
+│   ├── .env.example        # Environment variable template
+│   └── package.json        # Backend scripts and dependencies
+├── package.json            # Root workspace scripts to run both apps
+└── README.md               # Project documentation
+```
 
 ---
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, TypeScript, Vite, Three.js, React Three Fiber, GSAP
+- **Backend:** Node.js, Express, CORS, Dotenv
 
 ---
 
-## 📄 License
+## ⚡ Quick Start
 
-This project is licensed under the Personal Portfolio License (PPL) v1.0.
+### 1. Run the Frontend
+```bash
+# Option A: From root
+npm run dev:frontend
 
-See the LICENSE file for full details
+# Option B: Directly inside frontend
+cd frontend
+npm run dev
+```
+The frontend will start at `http://localhost:5173`.
 
+### 2. Run the Backend
+```bash
+# Option A: From root
+npm run dev:backend
+
+# Option B: Directly inside backend
+cd backend
+npm run dev
+```
+The backend API server will start at `http://localhost:5000`.
+
+---
+
+## 📡 Backend Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/` | API status and route guide |
+| `GET` | `/api/health` | Health check endpoint |
+| `POST` | `/api/contact` | Handles contact form submissions |
+
+---
+
+## 📄 License & Attribution
+
+Based on the open-source creative portfolio template by Moncy Yohannan, modified and customized for Rishi Vijay Siloni under the Personal Portfolio License (PPL) v1.0.

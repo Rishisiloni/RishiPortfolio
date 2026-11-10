@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  column-gap: 40px;
+  column-gap: 30px;
   row-gap: 8px;
   align-items: end;
 }
@@ -36,8 +36,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   font-weight: 500;
 }
 .navbar-title {
@@ -52,7 +52,8 @@
   .header ul {
     flex-direction: row;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
+    column-gap: 25px;
   }
   .header ul li {
     color: #eae5ec;
@@ -61,21 +62,25 @@
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .navbar-connect {
     display: block;
   }
+  .header ul {
+    font-size: 14px;
+    column-gap: 35px;
+  }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .header {
     padding: 35px 0px;
   }
   .header ul {
-    column-gap: 80px;
-    font-size: 16px;
+    column-gap: 45px;
+    font-size: 15px;
   }
   .navbar-connect {
-    font-size: 16px;
+    font-size: 15px;
   }
   .navbar-title {
     font-size: 18px;
